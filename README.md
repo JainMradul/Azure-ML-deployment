@@ -78,7 +78,7 @@ Once the pipeline run completes, the pipeline can be published with an endpoint 
 ## Screen Recording
 
 
-Link to screencast: https://youtu.be/WhWt4R1jW2k
+Link to screencast: 
 
 # Suggestions on improving the project
 
