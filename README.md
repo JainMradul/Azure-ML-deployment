@@ -91,24 +91,23 @@ Second part of this project is to operationalize ML run via pipeline using Pytho
 2. Published pipelines details can be seen in pipeline tab 
 
 ![runwidget](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/runwidget.PNG)
+
+## 8. Publish pipeline and deploy as endpoint
+
+Once the pipeline run completes, the pipeline can be published with an endpoint to enable downstream tasks automation. 
+The published pipeline status and endpoint can be viewed on the ML Studio
+
 ![pipelineendpoint](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/pipelineendpoint.PNG)
 ![pipelineendpoint2](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/pipelineendpoint2.PNG)
 
 
-## 10. Publish pipeline and deploy as endpoint
-
-Once the pipeline run completes, the pipeline can be published with an endpoint to enable automation of the task if it is needed again. The published pipeline status and endpoint can be viewed on the ML Studio as well as a scheduled run with the said pipeline
-
-![1](Screenshots/pipeline-endpoint.png)
-![2](Screenshots/pub-pipeline.png)
-![3](Screenshots/pipeline-run-complete.png)
-
-
-
 ## Screen Recording
 
-
-Link to screencast: 
+Automl run : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/automl%20run.mp4
+Best Model : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/best%20model%20and%20deploy.mp4
+Deployment : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/deployed.mp4
+Swagger API : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/swagger%20api.mp4
+Pipeline run : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/publish%20pipelines.mp4
 
 # Suggestions on improving the project
 
