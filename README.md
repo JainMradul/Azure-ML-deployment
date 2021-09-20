@@ -28,7 +28,7 @@ Broadly 2 approaches are used to operationalize:
 The model with the highest accuracy is deployed as an endpoint using Azure Container Instance (ACI). Through the ACI, the REST endpoint with authentication is used to access the model via API documentation enabled by Swagger.
 
 ## Architectural Diagram
-![diagram](Screenshots/MLOps-Flow.jpeg)
+![architecture](Screenshots/MLOps-Flow.jpeg)
 
 - [x] DataSet is loaded in AutoML run via UI and through python SDK (jupyter notebook)
 - [x] Model is trained and deployed manually using UI 
