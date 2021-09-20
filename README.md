@@ -27,7 +27,7 @@ Broadly 2 approaches are used to operationalize:
 
 The model with the highest accuracy is deployed as an endpoint using Azure Container Instance (ACI). Through the ACI, the REST endpoint with authentication is used to access the model via API documentation enabled by Swagger.
 
-## Architectural Diagram
+# Architectural Diagram
 ![architecture](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/architecture.PNG)
 
 - [x] DataSet is loaded in AutoML run via UI and through python SDK (jupyter notebook)
@@ -36,35 +36,35 @@ The model with the highest accuracy is deployed as an endpoint using Azure Conta
 - [x] API documentation is accessed via swagger and application insights are enabled to keep track of logs
 - [x] End user can interact via ACI endpoint or pipeline endpoint
 
-## Key Steps 
+# Key Steps 
 
-## 1. Upload and Register Dataset 
+# 1. Upload and Register Dataset 
 The first step is to upload the [Bank Marketing dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) and register it on the ML Studio
 
 ![dataset](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/dataset.PNG)
 
 
-## 2. AutoML run on compute cluster
+# 2. AutoML run on compute cluster
 
 In the next step, the automated ML run is configured by setting up a compute cluster and selecting the uploaded dataset for the experiment. 
 AutoML run multiple iterations to identify the best model
 
 ![AutoML](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/automlcomplete.PNG)
 
-## 3. Best performing model
+# 3. Best performing model
 
 The best model turned out to be Voting Ensemble, with an accuracy of 91.8%
 
 ![best model](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/bestmodel.PNG)
 
-## 4. Deploy the best model
+# 4. Deploy the best model
 
 Now we will deploy the best model as an Azure Container Instance with authentication enabled.
 
 ![model deploy](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/modeldeploy.PNG)
 
 
-## 5. Enable logging and view logs
+# 5. Enable logging and view logs
 
 Application insights are enabled for deployed model to capture logs.
 The logs can be viewed by running the logs.py script.
@@ -72,7 +72,7 @@ The logs can be viewed by running the logs.py script.
 ![Logs](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/logs.png)
 
 
-## 6. Swagger documentation of API and endpoints
+# 6. Swagger documentation of API and endpoints
 
 Swagger documentation is use to serve deployed model. 
 1. Model endpoints can be consumed via HTTP requests 
@@ -84,7 +84,7 @@ Swagger documentation is use to serve deployed model.
 ![swagger4](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/swager4.PNG)
 
 
-## 7. Pipeline run via Jupyter notebook
+# 7. Pipeline run via Jupyter notebook
 
 Second part of this project is to operationalize ML run via pipeline using Python SDK module. 
 1. Jupyter notebook runs with the same compute cluster and registered dataset as in the AutoML run. 
@@ -92,7 +92,7 @@ Second part of this project is to operationalize ML run via pipeline using Pytho
 
 ![runwidget](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/runwidget.PNG)
 
-## 8. Publish pipeline and deploy as endpoint
+# 8. Publish pipeline and deploy as endpoint
 
 Once the pipeline run completes, the pipeline can be published with an endpoint to enable downstream tasks automation. 
 The published pipeline status and endpoint can be viewed on the ML Studio
@@ -101,12 +101,16 @@ The published pipeline status and endpoint can be viewed on the ML Studio
 ![pipelineendpoint2](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/pipelineendpoint2.PNG)
 
 
-## Screen Recording
+# Screen Recording
 
 Automl run : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/automl%20run.mp4
+
 Best Model : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/best%20model%20and%20deploy.mp4
+
 Deployment : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/deployed.mp4
+
 Swagger API : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/swagger%20api.mp4
+
 Pipeline run : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/publish%20pipelines.mp4
 
 # Future work
