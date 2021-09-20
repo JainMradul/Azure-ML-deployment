@@ -1,12 +1,40 @@
 
 # Operationalizing Machine Learning
 
-In this project we use the Bank Marketing dataset to train machine learning models on AzureML for a classification task. Two approaches are used to operationalize: one is an AutoML run and the other is a pipeline run. The model with the highest accuracy rate is deployed as an endpoint as an Azure Container Instance (ACI). Through the ACI, the REST endpoint with authentication is used to access the model via API documentation enabled by Swagger.
+In this project, the UCI Bank Marketing dataset is used to predict whether the bank's clients will open a term deposit with them or not. So, this is a binary classification problem which requires predicting 'yes' or 'no'
+
+Dataset consist of 40 columns and ~33k rows
+
+Broadly classifying, independent variables consist of customers demographics,employment status,qualification, education and marital status information.
+
+Here is a list of all the columns available in dataset:
+
+>      'age', 'marital', 'default', 'housing', 'loan', 'month', 'day_of_week',
+>      'duration', 'campaign', 'pdays', 'previous', 'poutcome', 'emp.var.rate',
+>      'cons.price.idx', 'cons.conf.idx', 'euribor3m', 'nr.employed',
+>      'job_admin.', 'job_blue-collar', 'job_entrepreneur', 'job_housemaid',
+>      'job_management', 'job_retired', 'job_self-employed', 'job_services',
+>      'job_student', 'job_technician', 'job_unemployed', 'job_unknown',
+>      'contact_cellular', 'contact_telephone', 'education_basic.4y',
+>      'education_basic.6y', 'education_basic.9y', 'education_high.school',
+>      'education_illiterate', 'education_professional.course',
+>      'education_university.degree', 'education_unknown', 'y' 
+
+Broadly 2 approaches are used to operationalize: 
+
+1. AutoML run through UI 
+2. Pipeline run through python SDK
+
+The model with the highest accuracy is deployed as an endpoint using Azure Container Instance (ACI). Through the ACI, the REST endpoint with authentication is used to access the model via API documentation enabled by Swagger.
 
 ## Architectural Diagram
 ![diagram](Screenshots/MLOps-Flow.jpeg)
 
-As the diagram shows, the dataset is loaded into the AutoML run as well as the pipeline through the Jupyter notebook as a registered dataset. It is then trained and deployed manually on the AutoML run and the same process is automated via the Python SDK in the Jupyter notebook. The pipeline enables us to automate the AutoML runs on a compute cluster and outputs a best model as well as a pipeline endpoint. The best model then gets deployed as an ACI endpoint. From our endpoint, we get API Documentation via Swagger, logging via Application Insights. At the end, users interact with our model through either the pipeline endpoint, or the ACI. They also interact with the API, logs, and performance metrics.
+- [x] DataSet is loaded in AutoML run via UI and through python SDK (jupyter notebook)
+- [x] Model is trained and deployed manually using UI 
+- [x] Above process is automated via Pipeline and best model is deployed through ACI endpoint
+- [x] API documentation is accessed via swagger and application insights are enabled to keep track of logs
+- [x] End user can interact via ACI endpoint or pipeline endpoint
 
 ## Key Steps 
 
