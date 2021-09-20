@@ -109,6 +109,10 @@ Deployment : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenc
 Swagger API : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/swagger%20api.mp4
 Pipeline run : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/publish%20pipelines.mp4
 
-# Suggestions on improving the project
+# Future work
 
-The dataset shows a class imbalance during the run so that can be addressed by balanced data collection, since a model performs only as well as its data. Metrics other than accuracy can also be used to improve the model performance.
+- [ ] AutoML (autoguard rails) reveals the class imbalance in data and hence this could be treated using different algo/techniques to improve data quality
+- [ ] Depending upon the problem in hand, identify the best evaluation metric that maximize the model performance (Accuracy metric not necessary serves the purpose hence try different metrics as well to evaluate model)
+- [ ] AutoML can help you quickly identify the best performing model, hence that model could be coded and used as the base model and further improvement could be done gradually on the top of this model.
+
+
