@@ -103,15 +103,7 @@ The published pipeline status and endpoint can be viewed on the ML Studio
 
 # Screen Recording
 
-Automl run : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/automl%20run.mp4
-
-Best Model : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/best%20model%20and%20deploy.mp4
-
-Deployment : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/deployed.mp4
-
-Swagger API : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/swagger%20api.mp4
-
-Pipeline run : https://github.com/JainMradul/Azure-ML-deployment/blob/main/screencast/publish%20pipelines.mp4
+Youtube link : https://youtu.be/lxiZu64K8UY
 
 # Future work
 
