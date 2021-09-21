@@ -41,6 +41,7 @@ The model with the highest accuracy is deployed as an endpoint using Azure Conta
 # 1. Upload and Register Dataset 
 The first step is to upload the [Bank Marketing dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) and register it on the ML Studio
 
+![dataset1](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/dataset_register.PNG)
 ![dataset](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/dataset.PNG)
 
 
@@ -96,7 +97,8 @@ Second part of this project is to operationalize ML run via pipeline using Pytho
 
 Once the pipeline run completes, the pipeline can be published with an endpoint to enable downstream tasks automation. 
 The published pipeline status and endpoint can be viewed on the ML Studio
-
+![pipelineactive](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/pipelineactive.PNG)
+![publishpipeline](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/publishpipeline.PNG)
 ![pipelineendpoint](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/pipelineendpoint.PNG)
 ![pipelineendpoint2](https://github.com/JainMradul/Azure-ML-deployment/blob/main/screenshots/pipelineendpoint2.PNG)
 
